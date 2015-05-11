@@ -60,13 +60,15 @@
     </head>
     <body>
         <header>
-			<?php
-				echo "<h1>".$part->getNomeCompleto()."</h1>";
-			?>	
-            <p>Especialização em Desenvolvimento de Sistemas para Web</p>
+			<div class="page-header">
+				<?php
+					echo "<h1>".$part->getNomeCompleto()."</h1>";
+				?>	
+				<p>Especialização em Desenvolvimento de Sistemas para Web</p>
+			</div>
         </header>		
         <section id="foto">
-            <figure>
+            <figure class="text-center">
 				<?php
 					echo "<img src=\"".$part->getArquivoFoto()."\" alt=\"".$part->getNomeCompleto()."\" title=\"".$part->getNomeCompleto()."\" width=\"240\" height=\"320\" />";
 				?>
@@ -82,14 +84,14 @@
 					echo "<dt>E-mail</dt>";
 					echo "<dd>".$part->getEmail()."</dd>";
 					echo "<dt>Descrição</dt>";
-					echo "<dd>".$part->getDescricao()."</dd>";
+					echo "<dd class=\"text-justify\>".$part->getDescricao()."</dd>";
 					
 					echo "<a href=\"principal.php\">Voltar ao início.</a>";
 				?>
             </dl>			
         </section>
         <footer>
-            <small>Autor: Carlos Henrique Coimbra Possa - 2014</small>
+            <small class="text-center">Autor: Carlos Henrique Coimbra Possa - 2014</small>
         </footer>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
