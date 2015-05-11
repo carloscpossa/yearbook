@@ -1,0 +1,38 @@
+div ul{
+    list-style: none;
+}
+
+div ul li figure{
+    text-align: center;
+}
+
+div ul li figure figcaption{
+    width: 100%;
+    font-size: smaller;                    
+}
+
+form {    
+    margin-top: 1.5em;
+    font-size: small;    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    background-color: #74748d; 
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4c4c5a;
+}
