@@ -42,9 +42,13 @@
 					for ($i = 0; $i<=count($resultados)-1; $i++)
 					{
 						$est = new Estado();
-						$est->idEstado = utf8_encode($resultados[$i]["idEstado"]);
+						/*$est->idEstado = utf8_encode($resultados[$i]["idEstado"]);
 						$est->nomeEstado = utf8_encode($resultados[$i]["nomeEstado"]);
-						$est->siglaEstado = utf8_encode($resultados[$i]["sigaEstado"]);
+						$est->siglaEstado = utf8_encode($resultados[$i]["sigaEstado"]);*/
+						
+						$est->idEstado = $resultados[$i]["idEstado"];
+						$est->nomeEstado = $resultados[$i]["nomeEstado"];
+						$est->siglaEstado = $resultados[$i]["sigaEstado"];
 						
 						$estados[$i]=$est;
 					}
@@ -82,9 +86,14 @@
 				if (count($resultados)>0)
 				{
 					$est = new Estado();
-					$est->idEstado = utf8_encode($resultados[0]["idEstado"]);
+					/*$est->idEstado = utf8_encode($resultados[0]["idEstado"]);
 					$est->nomeEstado = utf8_encode($resultados[0]["nomeEstado"]);
-					$est->siglaEstado = utf8_encode($resultados[0]["sigaEstado"]);
+					$est->siglaEstado = utf8_encode($resultados[0]["sigaEstado"]);*/
+					
+					$est->idEstado = $resultados[0]["idEstado"];
+					$est->nomeEstado = $resultados[0]["nomeEstado"];
+					$est->siglaEstado = $resultados[0]["sigaEstado"];
+					
 					return $est;
 				}
 				else
