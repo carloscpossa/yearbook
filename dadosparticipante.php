@@ -85,7 +85,7 @@
 						echo "<dt>E-mail</dt>";
 						echo "<dd>".$part->getEmail()."</dd>";
 						echo "<dt>Descrição</dt>";
-						echo "<dd class=\"text-justify\>".$part->getDescricao()."</dd>";											
+						echo "<dd class=\"text-justify\">".$part->getDescricao()."</dd>";											
 					?>
 				</dl>
 				<?php
