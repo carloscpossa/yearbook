@@ -1,15 +1,4 @@
-body{
-    font-family: Arial, Verdana, sans-serif;
-    width: 80%;
-    margin: 2em auto;
-    background-image: linear-gradient(#e2e2e2, white);
-    min-height: 600px;
-}
-   
-header{
-    border: thin solid black;
-    border-radius: 0.5em 0.5em;
-}
+
 
 div.cadastro{    
     position: absolute;
