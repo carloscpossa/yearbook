@@ -99,19 +99,21 @@
 			{
 				if ($controle == 1)
 				{
-					echo "<div class=\"fotos\" >";
+					echo "<div class=\"row\" >";
 					echo "<ul>";		
 				}
 														
+				echo "<div class=\"col-sm-6 col-md-3\" >";
 				echo "<li>";
-				echo "<a href=\"dadosparticipante.php?loginpart=".$part2->getLogin()."\" >";
+				echo "<a class=\"thumbnail\" href=\"dadosparticipante.php?loginpart=".$part2->getLogin()."\" >";
 				echo "<figure>";
 				echo "<img src=\"".$part2->getArquivoFoto()."\" alt=\"".$part2->getNomeCompleto()."\" title=\"".$part2->getNomeCompleto()."\" width=\"240\" height=\"320\" />";
 				echo "<figcaption>".$part2->getNomeCompleto()."</figcaption></figure></a></li>";
+				echo "</div>";
 										
 				$controle++;
 					
-				if ($controle==5 | count($participantesCadastrados)<4)
+				if ($controle==5 | count($participantesCadastrados)<4 | $i == count($participantesCadastrados) - 1)
 				{
 					echo "</ul>";
 					echo "</div>";

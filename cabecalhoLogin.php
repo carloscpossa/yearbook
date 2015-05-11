@@ -24,10 +24,12 @@
         <![endif]-->
     </head>
     <body>
-		<div class="container">
+		<div class="container">			
 			<header> <!-- seção para separar o título -->
-				<h1>Especialização em Desenvolvimento de Sistemas para Web - 2014</h1>
-				<p>PUC MINAS</p>
+				<div class="page-header">
+					<h1>Especialização em Desenvolvimento de Sistemas para Web - 2014</h1>
+					<p>PUC MINAS</p>
+				</div>
 			</header>
 			<section> <!-- seção com as fotos e formulário de login-->
 				<div id="login">

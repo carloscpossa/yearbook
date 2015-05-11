@@ -14,6 +14,7 @@
 	else
 	{			
 		$controle = 1;
+		
 		for ($i = 0; $i <= count($participantesCadastrados) - 1; $i++)
 		{
 			if ($controle == 1)
