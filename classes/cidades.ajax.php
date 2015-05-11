@@ -6,7 +6,7 @@
 	
 	$cod_estados = mysql_real_escape_string( $_REQUEST['cod_estados'] );	
 	
-	//$cod_estados = 11;
+	$cod_estados = 11;
 	$est = new Estado();
 	$est = $est->pesquisaEstadoById($cod_estados);
 	

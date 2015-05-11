@@ -63,9 +63,13 @@
 					for ($i = 0; $i <= count($resultados) - 1; $i++)
 					{
 						$cid = new Cidade();
-						$cid->idEstado = utf8_encode($resultados[$i]["idEstado"]);
+						/*$cid->idEstado = utf8_encode($resultados[$i]["idEstado"]);
 						$cid->idCidade = utf8_encode($resultados[$i]["idCidade"]);
-						$cid->nomeCidade = utf8_encode($resultados[$i]["nomeCidade"]);
+						$cid->nomeCidade = utf8_encode($resultados[$i]["nomeCidade"]);*/
+						
+						$cid->idEstado = $resultados[$i]["idEstado"];
+						$cid->idCidade = $resultados[$i]["idCidade"];
+						$cid->nomeCidade = $resultados[$i]["nomeCidade"];
 						
 						$cidades[$i] = $cid;
 					}
@@ -101,9 +105,15 @@
 				if (count($resultados)>0)
 				{
 					$cid = new Cidade();
-					$cid->idEstado = utf8_encode($resultados[0]["idEstado"]);
+					/*$cid->idEstado = utf8_encode($resultados[0]["idEstado"]);
 					$cid->idCidade = utf8_encode($resultados[0]["idCidade"]);
-					$cid->nomeCidade = utf8_encode($resultados[0]["nomeCidade"]);									
+					$cid->nomeCidade = utf8_encode($resultados[0]["nomeCidade"]);*/
+					
+					$cid->idEstado = $resultados[0]["idEstado"];
+					$cid->idCidade = $resultados[0]["idCidade"];
+					$cid->nomeCidade = $resultados[0]["nomeCidade"];
+					
+					
 					return $cid;
 				}
 				else
