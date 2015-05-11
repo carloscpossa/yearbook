@@ -85,11 +85,12 @@
 						echo "<dt>E-mail</dt>";
 						echo "<dd>".$part->getEmail()."</dd>";
 						echo "<dt>Descrição</dt>";
-						echo "<dd class=\"text-justify\>".$part->getDescricao()."</dd>";
-						
-						echo "<a href=\"principal.php\">Voltar ao início.</a>";
+						echo "<dd class=\"text-justify\>".$part->getDescricao()."</dd>";											
 					?>
-				</dl>			
+				</dl>
+				<?php
+					echo "<a href=\"index.php\">Voltar ao início.</a>";
+				?>	
 			</section>
 			<footer>
 				<small class="text-center">Autor: Carlos Henrique Coimbra Possa - 2014</small>
