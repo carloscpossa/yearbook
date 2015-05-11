@@ -26,7 +26,7 @@
 			
 			echo "<div class=\"col-sm-6 col-md-3\" >";
 			echo "<li>";
-			echo "<a href=\"dadosparticipante.php?loginpart=".$part->getLogin()."\" >";			
+			echo "<a class=\"thumbnail\" href=\"dadosparticipante.php?loginpart=".$part->getLogin()."\" >";			
 			echo "<figure>";
 			echo "<img src=\"".$part->getArquivoFoto()."\" alt=\"".$part->getNomeCompleto()."\" title=\"".$part->getNomeCompleto()."\" width=\"240\" height=\"320\" />";
 			echo "<figcaption>".$part->getNomeCompleto()."</figcaption></figure></a></li>";
