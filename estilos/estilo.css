@@ -1,6 +1,4 @@
-
-
-div.cadastro{    
+/*div.cadastro{    
     position: absolute;
     left: 50%;
     width: 40%;
@@ -151,6 +149,19 @@ dt{
 
 dd{
     font-size: smaller;
+}*/
+
+div ul{
+    list-style: none;
+}
+
+div ul li figure{
+    text-align: center;
+}
+
+div ul li figure figcaption{
+    width: 100%;
+    font-size: smaller;                    
 }
 
 
