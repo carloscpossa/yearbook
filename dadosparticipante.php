@@ -59,43 +59,45 @@
         <![endif]-->
     </head>
     <body>
-        <header>
-			<div class="page-header">
-				<?php
-					echo "<h1>".$part->getNomeCompleto()."</h1>";
-				?>	
-				<p>Especialização em Desenvolvimento de Sistemas para Web</p>
-			</div>
-        </header>		
-        <section id="foto">
-            <figure class="text-center">
-				<?php
-					echo "<img src=\"".$part->getArquivoFoto()."\" alt=\"".$part->getNomeCompleto()."\" title=\"".$part->getNomeCompleto()."\" width=\"240\" height=\"320\" />";
-				?>
-            </figure>
-        </section>
-        <section>
-            <dl>
-				<?php
-					echo "<dt>Nome Completo</dt>";				
-					echo "<dd>".$part->getNomeCompleto()."</dd>";
-					echo "<dt>Cidade</dt>";
-					echo "<dd>".$part->getCidade()->getNomeCidade().", ".$part->getCidade()->getEstado()->getSiglaEstado().".</dd>";
-					echo "<dt>E-mail</dt>";
-					echo "<dd>".$part->getEmail()."</dd>";
-					echo "<dt>Descrição</dt>";
-					echo "<dd class=\"text-justify\>".$part->getDescricao()."</dd>";
-					
-					echo "<a href=\"principal.php\">Voltar ao início.</a>";
-				?>
-            </dl>			
-        </section>
-        <footer>
-            <small class="text-center">Autor: Carlos Henrique Coimbra Possa - 2014</small>
-        </footer>
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<div class="container">
+			<header>
+				<div class="page-header">
+					<?php
+						echo "<h1>".$part->getNomeCompleto()."</h1>";
+					?>	
+					<p>Especialização em Desenvolvimento de Sistemas para Web</p>
+				</div>
+			</header>		
+			<section id="foto">
+				<figure class="text-center">
+					<?php
+						echo "<img src=\"".$part->getArquivoFoto()."\" alt=\"".$part->getNomeCompleto()."\" title=\"".$part->getNomeCompleto()."\" width=\"240\" height=\"320\" />";
+					?>
+				</figure>
+			</section>
+			<section>
+				<dl>
+					<?php
+						echo "<dt>Nome Completo</dt>";				
+						echo "<dd>".$part->getNomeCompleto()."</dd>";
+						echo "<dt>Cidade</dt>";
+						echo "<dd>".$part->getCidade()->getNomeCidade().", ".$part->getCidade()->getEstado()->getSiglaEstado().".</dd>";
+						echo "<dt>E-mail</dt>";
+						echo "<dd>".$part->getEmail()."</dd>";
+						echo "<dt>Descrição</dt>";
+						echo "<dd class=\"text-justify\>".$part->getDescricao()."</dd>";
+						
+						echo "<a href=\"principal.php\">Voltar ao início.</a>";
+					?>
+				</dl>			
+			</section>
+			<footer>
+				<small class="text-center">Autor: Carlos Henrique Coimbra Possa - 2014</small>
+			</footer>
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		</div>
     </body>
 </html>
