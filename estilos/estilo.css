@@ -11,6 +11,13 @@ div ul li figure figcaption{
     font-size: smaller;                    
 }
 
+div.cadastro{    
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    margin-left: -20%;
+}
+
 form {    
     margin-top: 1.5em;
     font-size: small;    
@@ -35,6 +42,13 @@ nav a{
 
 nav a:hover {
     background-color: #4c4c5a;
+}
+
+#fotousuario{
+    float: left;
+    margin: 0 2em;
+    width: 140px;
+    height: 190px;
 }
 
 #login{
